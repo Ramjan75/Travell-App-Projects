@@ -1,0 +1,54 @@
+name: ecommerce_app
+description: A new Flutter project.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  get:
+  hexcolor:
+  eva_icons_flutter:
+  flutter_svg:
+  flutter_rating_bar:
+  google_fonts:
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  
+  assets:
+    - assets/img/
+   
+    
+
+  # fonts:
+  #   - family: Cera Regular
+  #     fonts:
+  #       - asset: fonts/CeraPro-Regular.ttf
+  #   - family: Cera Bold
+  #     fonts:
+  #       - asset: fonts/CeraPro-Bold.ttf
+  #   - family: Cera Medium
+  #     fonts:
+  #       - asset: fonts/CeraPro-Medium.ttf
+  #   - family: Cera Thin
+  #     fonts:
+  #       - asset: fonts/CeraPro-Thin.ttf
