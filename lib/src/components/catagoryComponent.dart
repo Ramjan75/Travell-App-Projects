@@ -51,7 +51,7 @@ class CategoryComponent extends StatelessWidget {
                               child: Image.asset(
                                 'assets/img/beach.jpeg',
                                 fit: BoxFit.cover,
-                                scale: 10,
+                                scale: 5,
                               )),
                           Text('Flights'),
                         ],
