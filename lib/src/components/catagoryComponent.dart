@@ -1,6 +1,7 @@
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 class CategoryComponent extends StatelessWidget {
   @override
@@ -26,7 +27,7 @@ class CategoryComponent extends StatelessWidget {
               ],
             )),
         Container(
-          height: 160,
+          height: 300,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
             shrinkWrap: true,
@@ -36,17 +37,23 @@ class CategoryComponent extends StatelessWidget {
               return Padding(
                 padding: EdgeInsets.all(6.0),
                 child: Container(
+                    width: 200,
                     margin: EdgeInsets.only(left: 20),
-                    width: 130,
                     decoration: BoxDecoration(
-                      color: Colors.white,
+                      color: HexColor('#1D2026'),
                     ),
                     child: Padding(
                       padding: EdgeInsets.all(8.0),
                       child: Column(
                         children: [
-                          Image.asset('assets/img/seaBeach.jpg'),
-                          Text('Flights')
+                          ClipRRect(
+                              borderRadius: BorderRadius.circular(10),
+                              child: Image.asset(
+                                'assets/img/beach.jpeg',
+                                fit: BoxFit.cover,
+                                scale: 10,
+                              )),
+                          Text('Flights'),
                         ],
                       ),
                     )),
