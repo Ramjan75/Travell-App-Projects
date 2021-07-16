@@ -10,21 +10,23 @@ class CategoryComponent extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Container(
-            margin: EdgeInsets.only(left: 30),
+            margin: EdgeInsets.only(left: 30, right: 20),
             child: Row(
               children: [
-                Icon(EvaIcons.paperPlaneOutline, color: Colors.white, size: 20),
-                SizedBox(
-                  width: 8,
-                ),
                 Text(
-                  'Service',
-                  style: GoogleFonts.lato(color: Colors.white, fontSize: 20),
+                  'Popular Places',
+                  style: GoogleFonts.lato(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 25),
                 ),
+                Spacer(),
+                Icon(EvaIcons.arrowForwardOutline,
+                    color: Colors.white, size: 20)
               ],
             )),
         Container(
-          height: 100,
+          height: 160,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
             shrinkWrap: true,
@@ -32,21 +34,18 @@ class CategoryComponent extends StatelessWidget {
             itemCount: 4,
             itemBuilder: (BuildContext context, int index) {
               return Padding(
-                padding: EdgeInsets.all(8.0),
+                padding: EdgeInsets.all(6.0),
                 child: Container(
-                    width: 100,
+                    margin: EdgeInsets.only(left: 20),
+                    width: 130,
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      shape: BoxShape.circle,
                     ),
                     child: Padding(
                       padding: EdgeInsets.all(8.0),
                       child: Column(
                         children: [
-                          Icon(
-                            Icons.flight_land_outlined,
-                            size: 30,
-                          ),
+                          Image.asset('assets/img/seaBeach.jpg'),
                           Text('Flights')
                         ],
                       ),
